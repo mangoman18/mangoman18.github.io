@@ -1,0 +1,149 @@
+<!DOCTYPE <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<html lang="en" <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>ClassProject</title>
+<!-- Bring in BootStrap-->
+<!-- Bring in our bootstrap stylesheet -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="style.css">
+<!--<link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand navtext float-right" id="hometext" href="index.html">Latitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <!--<li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plots
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="temprature.html">Temperature</a>
+                                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                <a class="dropdown-item" href="windspeed.html">Windspeed</a>
+                                <a class="dropdown-item" href="cloudiness.html">CloudCover</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Comparision.html">Comparision</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Data.htm">Data</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+        <!-- Creates the Overall Grid -->
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h1> Summary: Latitude Vs. X </h1>
+                <br>
+                <hr>
+
+                <img class="float-left" src="Instructions/Resources/assets/images/Fig1.png" width=200px height=200px
+                    alt="Temperature Variations">
+
+                <div>
+                    <h4> The purpose of project was to compare the change in weather related parameters recorded
+                        at various cities of the world as the location of those cities varied in thier distance from the
+                        equator.
+                        To accomplish this we pulled data using Weathermap API to assemble a dataset of over 500 cities.
+                        After assembling the data set we used Matplotlib to plot various aspects of the weather vs.
+                        latitude. Factors we looked at
+                        included temperature, cloudiness , windspeed, and humidity. This site provides the source data
+                        and
+                        visualizations created as
+                        part of the analysis, as well as explanations and descriptions of any trends and correlations
+                        witnessed.
+                    </h4>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h1>Visualizations</h1>
+                <br>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-3">
+
+                        <a href="temprature.html"><img class="img-fluid"
+                                src="Temprature.png">
+                                
+                        </a>
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="Humidity.html"><img class="img-fluid"
+                                src="Humidity.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a href="cloudiness.html"><img class="img-fluid"
+                                src="cloudiness.png">
+                        </a>
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="WindSpeed.html"><img class="img-fluid"
+                                src="WindSpeed.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
